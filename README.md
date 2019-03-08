@@ -7,4 +7,4 @@ tugas-labkom-2019-11-9-william-shakespeare created by GitHub Classroom
 5. Moch. Raihan Reynaldy-17.63.08712
 6. Syabick Valentino S.-17.63.08828
 7. Azzahra Salma K.-17.63.08612
-8. Rachela Titania A.-17.63.786
+8. Rachela Titania A.-17.63.08786
