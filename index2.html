@@ -1,534 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Biografi</title>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-</style>
-</head>
+<html>
+<head><title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+table, th, td {
+  border: 1px solid black;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+</style>
+</head>
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="williamShakespare.png" style="width:100%">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="index2.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="index3.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="index4.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-<!-- Header -->
-<header>
-<div class="w3-center pc1centeredContent" style="position: relative;"><div class="pc1bg" style="display: none;"></div><div class="pc1inlineContent" style="position: relative;"><div data-is-mesh="true" class="style-jt2o01xi" style="width: 100%;"><div data-ismobile="false" data-is-mesh-layout="true" class="p1" style="height: 100%; left: 0px; position: relative;"><div id="c1s0sbg" class="p1bg" style="margin-left: calc((100% - 980px) / 2); width: 980px;"></div><div id="c1s0sinlineContent" class="p1inlineContent"><style id="c1s0s-mesh-styles">
-    
-#c1s0sinlineContent {
-    height: auto;
-    width: 100%;
-    position: relative;
-}
-
-#c1s0sinlineContent-gridWrapper {
-    pointer-events: none;
-}
-
-#c1s0sinlineContent-gridContainer {
-    position: static;
-    display: grid;
-    height: auto;
-    width: 100%;
-    min-height: 696px;
-    grid-template-rows: min-content min-content 1fr;
-    grid-template-columns: 100%;
-    padding-bottom: 0px;
-    box-sizing: border-box;
-}
-
-#i6g6mdtr {
-    position: relative;
-    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
-    left: 192px;
-    grid-area: 1 / 1 / 4 / 2;
-    justify-self: start;
-    align-self: start;
-}
-
-#i6g6mdts {
-    position: relative;
-    margin: 0px 0px 10px calc((100% - 980px) * 0.5);
-    left: 1px;
-    grid-area: 2 / 1 / 3 / 2;
-    justify-self: start;
-    align-self: start;
-}
-
-#i6g6mdtv_2 {
-    position: relative;
-    margin: 244px 0px 39px calc((100% - 980px) * 0.5);
-    left: 6px;
-    grid-area: 1 / 1 / 2 / 2;
-    justify-self: start;
-    align-self: start;
-}
-
-#c1s0scenteredContent {
-    position: relative;
-}
-
-#c1s0sinlineContent-gridContainer > * {
-    pointer-events: initial;
-}
-
-#c1s0sinlineContent-gridContainer > [id$="-rotated-wrapper"] {
-    pointer-events: none;
-}
-
-#c1s0sinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
-    pointer-events: initial;
-}</style><div id="c1s0sinlineContent-gridWrapper" data-mesh-internal="true"><div id="c1s0sinlineContent-gridContainer" data-mesh-internal="true"><div data-exact-height="685" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="i6g6mdtr" style="width: 910px; height: 685px;"><div id="i6g6mdtrlink" class="wp2link" style="width: 910px; height: 685px;"><div data-style="" class="wp2img" id="i6g6mdtrimg" style="position: relative; width: 910px; height: 685px;"><img id="i6g6mdtrimgimage" alt="" data-type="image" src="william-shakespeare-194895-1-402.jpg" style="width: 910px; height: 685px; object-fit: cover;"></div></div></div><style type="text/css" data-styleid="wp2">.wp2_zoomedin {cursor:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.cur), auto;overflow:hidden;display:block;}
-.wp2_zoomedout {cursor:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_in.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_in.cur), auto;}
-.wp2link {display:block;overflow:hidden;}
-.wp2img {overflow:hidden;}
-.wp2imgimage {position:static;box-shadow:#000 0 0 0;user-select:none;}</style><div data-packed="true" class="txtNew" id="i6g6mdts" style="width: 607px; pointer-events: none;"><h2 style="font-family:raleway;width:320px;background-color:white;text-indent:2em;font-size:300%;line-height:1em;" class="font_2"><span style="line-height:1em;"><span style="letter-spacing:0.1em;"><span class="backcolor_11">PENYAIR</span></span></span></h2>
-
-<h2 style="font-family:raleway;text-indent:2em;width:270px;background-color:white;font-size:300%;line-height:1em;" class="font_2"><span style="line-height:1em;"><span style="letter-spacing:0.1em;"><span class="backcolor_11">AKTOR</span></span></span></h2>
-
-<h2 style="font-family:raleway;width:400px;font-size:300%;background-color:white;text-indent:2em;line-height:1em;" class="font_2"><span style="line-height:1em;"><span style="letter-spacing:0.1em;"><span class="backcolor_11">DRAMAWAN</span></span></span></h2>
-</div><style type="text/css" data-styleid="txtNew">.txtNew {word-wrap:break-word;text-align:start;}
-.txtNew_override-left * {text-align:left !important;}
-.txtNew_override-right * {text-align:right !important;}
-.txtNew_override-center * {text-align:center !important;}
-.txtNew_override-justify * {text-align:justify !important;}
-.txtNew > * {pointer-events:auto;}
-.txtNew li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
-.txtNew ol,.txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
-.txtNew ul {list-style-type:disc;}
-.txtNew ol {list-style-type:decimal;}
-.txtNew ul ul,.txtNew ol ul {list-style-type:circle;}
-.txtNew ul ul ul,.txtNew ol ul ul {list-style-type:square;}
-.txtNew ul ol ul,.txtNew ol ol ul {list-style-type:square;}
-.txtNew ul[dir="rtl"],.txtNew ol[dir="rtl"] {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew ul[dir="rtl"] ul,.txtNew ul[dir="rtl"] ol,.txtNew ol[dir="rtl"] ul,.txtNew ol[dir="rtl"] ol {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew p {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h1 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h2 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h3 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h4 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h5 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h6 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew a {color:inherit;}</style><div data-packed="true" class="txtNew" id="i6g6mdtv_2" style="width: 461px; pointer-events: none;"><h1 class="font_0"><a href="https://www.wix.com/demone2/music-artist" target="_self"><span style="letter-spacing:0.1em;">William</span></a></h1>
-
-<h1 class="font_0"><a href="https://www.wix.com/demone2/music-artist" target="_self"><span style="letter-spacing:0.1em;">Shakespeare</span><span style="letter-spacing:0.1em;">//</span></a></h1>
-</div><style type="text/css" data-styleid="txtNew">.txtNew {word-wrap:break-word;text-align:start;}
-.txtNew_override-left * {text-align:left !important;}
-.txtNew_override-right * {text-align:right !important;}
-.txtNew_override-center * {text-align:center !important;}
-.txtNew_override-justify * {text-align:justify !important;}
-.txtNew > * {pointer-events:auto;}
-.txtNew li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
-.txtNew ol,.txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
-.txtNew ul {list-style-type:disc;}
-.txtNew ol {list-style-type:decimal;}
-.txtNew ul ul,.txtNew ol ul {list-style-type:circle;}
-.txtNew ul ul ul,.txtNew ol ul ul {list-style-type:square;}
-.txtNew ul ol ul,.txtNew ol ol ul {list-style-type:square;}
-.txtNew ul[dir="rtl"],.txtNew ol[dir="rtl"] {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew ul[dir="rtl"] ul,.txtNew ul[dir="rtl"] ol,.txtNew ol[dir="rtl"] ul,.txtNew ol[dir="rtl"] ol {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew p {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h1 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h2 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h3 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h4 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h5 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h6 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew a {color:inherit;}</style></div></div></div></div><style type="text/css" data-styleid="p1">.p1bg {position:absolute;top:0;right:0;bottom:0;left:0;}
-.p1[data-state~="mobileView"] .p1bg {left:10px;right:10px;}
-.p1inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style><div data-ismobile="false" data-is-mesh-layout="true" class="p2" id="c10fk" style="height: 100%; left: 0px; position: relative; display: none; visibility: hidden;"><div id="c10fkbg" class="p2bg" style="margin-left: calc((100% - 980px) / 2); width: 980px;"></div><div id="c10fkinlineContent" class="p2inlineContent"><style id="c10fk-mesh-styles">
-    
-#c10fkinlineContent {
-    height: auto;
-    width: 100%;
-    min-height: 500px;
-    padding-bottom: 0px;
-    box-sizing: border-box;
-    position: relative;
-}
-
-#c10fkcenteredContent {
-    position: relative;
-}
-
-#c10fkinlineContent-gridWrapper {
-    pointer-events: none;
-}
-
-#c10fkinlineContent-gridContainer > * {
-    pointer-events: initial;
-}
-
-#c10fkinlineContent-gridContainer > [id$="-rotated-wrapper"] {
-    pointer-events: none;
-}
-
-#c10fkinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
-    pointer-events: initial;
-}</style></div></div><style type="text/css" data-styleid="p2">.p2bg {position:absolute;top:0;right:0;bottom:0;left:0;}
-.p2[data-state~="mobileView"] .p2bg {left:10px;right:10px;}
-.p2inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style><div data-ismobile="false" data-is-mesh-layout="true" class="p2" id="c130w" style="height: 100%; left: 0px; position: relative; display: none; visibility: hidden;"><div id="c130wbg" class="p2bg" style="margin-left: calc((100% - 980px) / 2); width: 980px;"></div><div id="c130winlineContent" class="p2inlineContent"><style id="c130w-mesh-styles">
-    
-#c130winlineContent {
-    height: auto;
-    width: 100%;
-    position: relative;
-}
-
-#c130winlineContent-gridWrapper {
-    pointer-events: none;
-}
-
-#c130winlineContent-gridContainer {
-    position: static;
-    display: grid;
-    height: auto;
-    width: 100%;
-    min-height: 500px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 100%;
-    padding-bottom: 0px;
-    box-sizing: border-box;
-}
-
-#comp-iqgi0qmz {
-    position: relative;
-    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
-    left: 192px;
-    grid-area: 1 / 1 / 2 / 2;
-    justify-self: start;
-    align-self: start;
-}
-
-#c130wcenteredContent {
-    position: relative;
-}
-
-#c130winlineContent-gridContainer > * {
-    pointer-events: initial;
-}
-
-#c130winlineContent-gridContainer > [id$="-rotated-wrapper"] {
-    pointer-events: none;
-}
-
-#c130winlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
-    pointer-events: initial;
-}</style><div id="c130winlineContent-gridWrapper" data-mesh-internal="true"><div id="c130winlineContent-gridContainer" data-mesh-internal="true"><div data-has-iframe="true" class="style-jt2o01xd" id="comp-iqgi0qmz" style="width: 786px; height: 801px; overflow: hidden; min-height: 801px; min-width: 786px;"><iframe scrolling="no" frameborder="0" allow="autoplay; camera; microphone; geolocation; vr" allowtransparency="true" allowfullscreen="" name="comp-iqgi0qmz" title="Wix Music" aria-label="Wix Music" id="comp-iqgi0qmziframe" class="style-jt2o01xdiframe" style="width: 786px; height: 801px; min-height: 801px; min-width: 786px; display: block; position: absolute;" src="https://apps.wix.com/music-server/music-widget?cacheKiller=1553072216781&amp;compId=comp-iqgi0qmz&amp;deviceType=desktop&amp;externalId=84770f67-c86e-4e87-9e25-85627106e45f&amp;height=801&amp;instance=s398WMQPi07IEJAAyIPwk8_pC4-ijfBQ5-5rr-QC_F0.eyJpbnN0YW5jZUlkIjoiYTFkZTVhNTctMjQzYi00OTM2LThmYTAtMzVjZjRjZTFmNDFlIiwiYXBwRGVmSWQiOiIxM2JiNWQ2Ny0xYWRkLWU3NzAtYTcxZi0wMDEyNzdlMTdjNTciLCJtZXRhU2l0ZUlkIjoiMDY3YWUyYTgtN2FkNi00NjljLWEwODAtMWIzMDMxMzgwMTQzIiwic2lnbkRhdGUiOiIyMDE5LTAzLTIwVDA4OjU2OjQ3Ljk4MVoiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjE4MC4yNDQuMjMyLjEwLzQ5MDY2IiwidmVuZG9yUHJvZHVjdElkIjpudWxsLCJkZW1vTW9kZSI6ZmFsc2UsIm9yaWdpbkluc3RhbmNlSWQiOiJjODBjZDJjNC0wODM0LTRkNWEtYTU5OC1lOWUzYzQ4OGY5ZmQiLCJhaWQiOiIyMThiNTkxYi00NjE0LTQyYTEtOTk4ZC00NWUxN2I5MDc2ZjUiLCJiaVRva2VuIjoiYTdhNGI4ZmYtNWVlZC0wZmFhLTJmMjAtMmVmZjdkZDlmNTVkIiwic2l0ZU93bmVySWQiOiI4NDc3MGY2Ny1lY2JkLTQ0YjYtYjM1YS01ODRmMmRjMTVhZjEifQ&amp;locale=en&amp;pageId=c130w&amp;siteRevision=89&amp;viewMode=site&amp;vsi=9733be76-f437-4633-8e56-53846801cf04&amp;width=786"></iframe><div id="comp-iqgi0qmzoverlay" class="style-jt2o01xdoverlay"></div></div><style type="text/css" data-styleid="style-jt2o01xd">.style-jt2o01xd {overflow:hidden;}
-.style-jt2o01xd iframe {position:absolute;width:100%;height:100%;overflow:hidden;}
-.style-jt2o01xdpreloaderOverlay {position:absolute;top:0;left:0;color:#373737;width:100%;height:100%;}
-.style-jt2o01xdpreloaderOverlaycontent {width:100%;height:100%;}
-.style-jt2o01xdunavailableMessageOverlay {position:absolute;top:0;left:0;color:#373737;width:100%;height:100%;}
-.style-jt2o01xdunavailableMessageOverlaycontent {width:100%;height:100%;background:rgba(255, 255, 255, 0.9);font-size:0;margin-top:5px;}
-.style-jt2o01xdunavailableMessageOverlaytextContainer {color:#373737;font-family:"Helvetica Neue", "HelveticaNeueW01-55Roma", "HelveticaNeueW02-55Roma", "HelveticaNeueW10-55Roma", Helvetica, Arial, sans-serif;font-size:14px;display:inline-block;vertical-align:middle;width:100%;margin-top:10px;text-align:center;}
-.style-jt2o01xdunavailableMessageOverlayreloadButton {display:inline-block;}
-.style-jt2o01xdunavailableMessageOverlay a {color:#0099FF;text-decoration:underline;cursor:pointer;}
-.style-jt2o01xdunavailableMessageOverlayiconContainer {display:none;}
-.style-jt2o01xdunavailableMessageOverlaydismissButton {display:none;}
-.style-jt2o01xdunavailableMessageOverlaytextTitle {font-family:"Helvetica Neue", "HelveticaNeueW01-55Roma", "HelveticaNeueW02-55Roma", "HelveticaNeueW10-55Roma", Helvetica, Arial, sans-serif;display:none;}
-.style-jt2o01xdunavailableMessageOverlay[data-state~="hideIframe"] .style-jt2o01xdunavailableMessageOverlay_buttons {opacity:1;}
-.style-jt2o01xdunavailableMessageOverlay[data-state~="hideOverlay"] {display:none;}</style></div></div></div></div><style type="text/css" data-styleid="p2">.p2bg {position:absolute;top:0;right:0;bottom:0;left:0;}
-.p2[data-state~="mobileView"] .p2bg {left:10px;right:10px;}
-.p2inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style></div></div>
-  
-  <!-- Navbar (placed at the bottom of the header image) -->
-  <div class="w3-bar w3-black w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="index2.html" class="w3-bar-item w3-button">Biography</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
-</header>
-
-<!-- Navbar on small screens -->
-<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-<div class="w3-bar w3-light-grey">
-  <a href="index.html" class="w3-bar-item w3-button">Home</a>
-  <a href="index2.html" class="w3-bar-item w3-button">Biography</a>
-  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
 </div>
-</div>
-<!-- Page content -->
-<div class="w3-content w3-padding-large w3-margin-top"> 
-	<main data-is-mobile="false" data-is-mesh="true" data-site-width="980" style="left:0;margin-left:0;width:100%;min-width:980px;top:0;bottom:;right:;position:" class="pc1" data-state="" id="PAGES_CONTAINER"><div style="left:0" id="PAGES_CONTAINERscreenWidthBackground" class="pc1screenWidthBackground"></div><div style="position:relative" id="PAGES_CONTAINERcenteredContent" class="pc1centeredContent"><div style="display:none" id="PAGES_CONTAINERbg" class="pc1bg"></div><div style="position:relative" id="PAGES_CONTAINERinlineContent" class="pc1inlineContent"><div data-is-mesh="true" style="width: 100%; min-height: 618px;" class="s_VOwPageGroupSkin" id="SITE_PAGES"><div data-ismobile="false" data-is-mesh-layout="true" style="height:100%;left:0;position:relative;top:;bottom:;right:" class="p1" id="mainPage"><div style="margin-left:calc((100% - 980px) / 2);width:980px" id="mainPagebg" class="p1bg"></div><div id="mainPageinlineContent" class="p1inlineContent"><style id="mainPage-mesh-styles">
-    
-#mainPageinlineContent {
-    height: auto;
-    width: 100%;
-    position: relative;
-}
+<div class="w3-padding-large" id="main">
+<h1>BIOGRAFI</h1>
+<hr width="70%">
+<table align="right" bgcolor="white">
+  <caption><h2>William Shakespeare</h2><img align="w3-center" style="width: 50%" src="foto 1.jpg"></caption>
+  <tr>
+    <th>Nama</th>
+    <td>William Shakespeare</td>
+  </tr>
+  <tr>
+    <th>Tanggal Lahir</th>
+    <td>26 April 1564</td>
+  </tr>
+  <tr>
+    <th>Tempat Lahir</th>
+    <td>Stratford-upon-Avon, Warwickshire, Inggris</td>
+  </tr>
+  <tr>
+    <th>Kewarganegaraan</th>
+    <td>Inggris</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Orang tua </th>
+    <td>John Shakespeare </td>
+  </tr>
+  <tr><td>Mary Aden</td></tr>
+  <tr>
+    <th>Pasangan</th>
+    <td>Anne Hathaway (1582-1616)</td>
+  </tr>
+  <tr>
+    <th rowspan="3">Anak </th>
+    <td>Susanna Hall  </td>
+  </tr>
+  <tr><td>Hamnet Shakespeare </td></tr>
+  <tr><td>Judith Quiney </td></tr>
+  <tr>
+    <th>Tanda Tangan</th>
+    <td>William Shakespeare</td>
+  </tr>
+</table>
+<p align="margin-left">William Shakespeare lahir pada tanggal 26 April 1564 di Stratford-upon-Avon, Warwickshire, Inggris. Shakespeare merupakan putra dari pasangan John Shakespeare dan Mary Aden. Ia merupakan anak dari seorang pengusaha sukses pembuatan sarung tangan.</p>
+<p>
+Shakespeare tidak mengikuti jejak ayahnya sebagai pengusaha melainkan ia tertarik untuk menjadi seorang sastrawan. Pada zaman itu, sekolah umum baru dimulai di Inggris. Sebelumnya, hampir semua anak tidak tahu cara membaca dan menulis, mereka hanya belajar suatu keterampilan atau bertani.</p>
+<p>
+Shakespeare pergi ke salah satu sekolah umum yang baru ini. Ia belajar Latin, yang merupakan bahasa semua kaum terpelajar, tidak peduli dari negara mana mereka berasal. Dari London ke Lisbon, dari Aleksandria ke Konstantinopel, dari Tunis ke Yerusalem.</p>
+<p>
+Shakespeare bersekolah di sekolah umum setempat. Di sana ia belajar membaca, menulis dan berbahasa Latin. Setelah ia cukup mahir berbahasa Latin, ia kemudian membaca <b><ins>buku karya penulis dan filusuf dari Yunani Kuno dan Romawi. Beberapa kisah-kisah ini menjadi inspirasi karya-karya dari Shakespeare. The Golden Ass karya Apuleius, menginspirasikan karya Shakespare berjudul "A Midsummers Nigh't Dream".</b></ins></p>
+<p>
+Pada zaman Elizabeth I saat memerintah Inggris hampir selama hidup Shakespeare. Pada zaman tersebut tidak ada peperangan. Perdagangan berkembang. London menjadi kota yang padat, ramai, dan penuh dengan peluang. Rumah-rumah sandiwara dibangun di London seperti teater-teater tersebut adalah tempat yang populer yang dikunjungi masyarakat.</p>
+<p>
+Shakespeare hidup di zaman Renaisans yang mempunyai arti, yaitu "kelahiran kembali" yang terjadi pada abad ke-15 hingga abad ke-17 di Eropa. Pada zaman tersebut terdapat gerakan kebangkitan minat terhadap seni, musik, dan arsitektur.</p> 
+<p>
+Pada zaman tersebut mereka mulai memahami kekuasaan dan posisi pemerintahan diciptakan oleh manusia, bukan ditentukan oleh Tuhan sejak lahirnya. Mereka menyadari bahwa kekristenan bukanlah satu-satunya agama di dunia. Dan karena banyak di antara mereka mulai dapat membaca, maka banyak juga yang tidak ingin tinggal di kelas sosial tempat mereka dilahirkan.</p>
+<P>
+Banyak petualang Renaisans menggunakan cara mereka sendiri-sendiri untuk mencari rezeki dan mengembangkan kehidupan mereka. Shakespeare adalah salah satu dari orang-orang tersebut. Pada tahun 1590, William Shakepseare mengokohkan dirinya sebagai seorang penulis sandiwara dan aktor di London. Ia juga memiliki bagian dari rumah sandiwara tempat ia dan teman-temannya bermain yang merupakan sumber utama penghasilannya.
+</p>
 
-#mainPageinlineContent-gridWrapper {
-    pointer-events: none;
-}
+<h1>Teater Globe</h1>
+<hr width="70%">
+<center><img src=""></center> FOTO TEATER GLOBE
+<p>Shakespeare menjadi orang teater yang sangat populer, dan sangat kaya. Ratu Elizabeth I sangat menyukai karya-karyanya, begitu pula dengan Raja James I, penerusnya. Pada pemerintahan James I, Shakespeare dan kawan-kawan terkenal dengan sebutan "Orang-orang Raja" karena Raja James I adalah pengunjung mereka yang spesial.</p>
+<p>Shakespeare dan orang-orang Raja bermain di istana kerajaan, di teater Globe dan di rumah sandiwara mereka, dan teater Blackfriars. Untuk mendapatkan lebih banyak uang, mereka juga mengadakan tur keliling Inggris, terutama pada saat-saat wabah penyakit menjangkit Inggris</p>
+<p>Teater-teater zaman Elizabeth merupakan bangunan kayu yang bertingkat-tingkat. Para penonton duduk di ketiga sisi atau berdiri di tengah-tengah lantai. Bagian tengah teater terbuka atapnya karena pada zaman itu belum ada penerangan buatan. Ribuan orang berjejalan di teater untuk pertunjukan sore hari. Para penonton berteriak-teriak di belakang para aktor. Teater Globe adalah tempat yang padat pengunjung, bising, dan berjejal-jejalan.Di Globe Teater ini Shakespeare banyak menulis karya-karya drama terbesarnya. </p>
+ 
+ <h1>Menikah</h1>
+ <hr>
+<p>Pada tanggal 28 November 1528 di Temple Graftor, Shakespeare menikah dengan Anne Hathaway, yang delapan tahun lebih tua darinya.</p>
+<center><img src=""></center>>>>>>>>FOTO ISTRINYA
+<p>Anne pada saat itu sedang hamil tiga bulan. Bersama-sama mereka dikaruniai tiga anak yang bernama Susanna, dan si kembar Hamnet dan Judith. </p>
+<p>Istri dan ketiga anaknya tinggal di Stratford. Shakespeare pergi mengunjungi mereka setahun sekali. Pada tahun 1596 Hamnet meninggal dunia. Karena kemiripan nama, banyak orang berpikir bahwa hal ini menginspirasinya untuk menulis The Tragical History of Hamlet, Prince of Denmark.</p>
 
-#mainPageinlineContent-gridContainer {
-    position: static;
-    display: grid;
-    height: auto;
-    width: 100%;
-    min-height: 618px;
-    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content 1fr;
-    grid-template-columns: 100%;
-    padding-bottom: 0px;
-    box-sizing: border-box;
-}
+<h1>Menjadi Seorang Sastrawan</h1>
+<hr>
+<p>William Shakespeare menulis selama dua puluh lima tahun, menciptakan tiga puluh enam hingga tiga puluh sembilan karya yang diketahui hingga saat ini. Topik yang dicakup beragam mulai dari roman komik hingga perang saudara, dari permainan domestik hingga kejadian politis yang menggegerkan dunia. Karya Shakespeare adalah tragedi, komedi, sejarah, roman, komik, dan kebanyakan karyanya adalah bentuk lham dari apa yang ia baca, dengar, dan ia rasakan sendiri.</p>
+<p>Shakespeare berhenti menulis pada tahun 1611 dan meninggal dunia beberapa tahun kemudian pada 1616. Sampai wafatnya ia tetap menikah dengan Anne. Pada batu nisannya tertulis: "Blest be the man who cast these stones, and cursed be he that moves my bones." (bahasa Indonesia: "Terbekatilah ia yang menaruh batu-batu ini, dan terkutuklah ia yang memindahkan tulang-tulangku.").</p>
 
-#hz484f6s {
-    position: relative;
-    margin: 59px 0px 0 calc((100% - 980px) * 0.5);
-    left: 0px;
-    grid-area: 1 / 1 / 9 / 2;
-    justify-self: start;
-    align-self: start;
-}
+<h1>Karya yang Dihasilkan</h1>
+<hr>
+<p>Romeo and Juliet , Shakespeare menulis ucapan sang pangeran “Mercy but murders, pardoning those that kill,” jelas menyuguhkan suatu ide (lepas orang terima atau tidak) yang punya makna filosofis dan lebih punya pengaruh politis ketimbang, katakanlah, memandang lukisan “Mona Lisa.”Beberapa karya dari William Shakespeare meliputi, tragedi, komedi, sejarah, roman, komik, dan puisi.
+</p>
+<h2>Tragedi :</h2>
+<p>Romeo and Juliet,Macbeth,King Lear, Hamlet, Othello, Titus Andronicus, Julius Caesar, Antony and Cleopatra, Coriolanus, Troilus and Cressida, Timon of Athens</p>
+<h2>Komedi :</h2>
+<p>The Comedy of Errors, All's Well That Ends Well, As You Like It, A Midsummer Night's Dream, Much Ado About Nothing, Measure for Measure, The Tempest, Taming of the Shrew,  Twelfth Night, or What You Will,    The Merchant of Venice, The Merry Wives of Windsor, Love's Labour's Lost, The Two Gentlemen of Verone, Pericles Prince of Tyre, Cymbeline,The Winter's Tale</p>
+<h2>Sejarah :</h2>
+<p>Richard III, Henry VI, part 1,  Henry VI, part 2,  Henry VI, part 3,    Henry V,   Henry IV, part 1,    Henry IV, part 2,   Henry VIII,    King John</p>
+<h2>Puisi :</h2>
+<p>Shakespeare's Sonnets, Venys and Adonis, The Rape of Lucrece, The Passionate Pilgrim ,The Phoenex and the Turtle , A Lover's Complaint</p>
+<p>Pada zaman kepemimpinan Ratu Elizabeth I, di Inggris sangat menjunjung tinggi karya seni, pada jaman itulah seorang William Shakespeare menjadikan bakatnya sebagai penghasilannya dan membuktikan kepada dunia dialah Sang Sastrawan terbesar Inggris. Ratu Elizabeth I pada saat itu adalah salah satu tamu kehormatan William Shakespeare dalam setiap kali manggungnya.</p>
 
-#hz47ezqv_0 {
-    position: relative;
-    margin: 169px 0px 7px calc((100% - 980px) * 0.5);
-    left: 544px;
-    grid-area: 1 / 1 / 2 / 2;
-    justify-self: start;
-    align-self: start;
-}
+<h1>Gagasan</h1>
+<hr>
+<p>Lebih dari 100 tahun berlalu sejak <b>Johannes Gutenberg memperkenalkan percetakan ke Eropa pada tahun 1452.</b> Shakespeare dan orang Inggris lain yang dapat membaca ─ dan mampu membeli ─ buku-buku menjadi akrab dengan kisah-kisah dari berbagai tempat seperti Italia, Prancis, Asia Minor, dan Afrika Utara. Beberapa kisah-kisah ini menjadi dasar cerita-cerita terbesar Shakespeare. Contohnya, The Golden Ass karya Apuleius, sebuah kisah kuno dari Afrika Utara, kemungkinan merupakan kisah yang menginspirasikan Impian di Tengah Musim. Shakespeare meminjam cerita untuk Romeo dan Juliet dari seorang penulis Inggris lain, yang mendapatkannya dari seorang penulis Prancis, yang menerjemahkannya dari kisah abad ke-16 oleh Luigi da Porta dari Italia yang bersumpah bahwa cerita tersebut adalah berdasarkan cerita nyata.</p>
+<p>Johannes Gensfleisch zur Laden zum Gutenberg (sekitar 1398 - 3 Februari 1468) adalah seorang pandai logam dan penemu berkebangsaan Jerman yang memperoleh ketenaran berkat sumbangannya di bidang teknologi percetakan pada tahun 1450-an, termasuk aloy logam huruf (type metal) dan tinta berbasis-minyak, cetakan untuk mencetak huruf secara tepat, dan sejenis mesin cetak baru yang berdasarkan pencetak yang digunakan dalam membuat anggur.</p>
+>>>>>>>>>>>>>>>>>>>>>>FOTO PENGARUH
 
-#hzcmu1gf {
-    position: relative;
-    margin: 0px 0px 16px calc((100% - 980px) * 0.5);
-    left: 544px;
-    grid-area: 2 / 1 / 3 / 2;
-    justify-self: start;
-    align-self: start;
-}
 
-#hz47ezqu {
-    position: relative;
-    margin: 0px 0px 45px calc((100% - 980px) * 0.5);
-    left: 545px;
-    grid-area: 3 / 1 / 4 / 2;
-    justify-self: start;
-    align-self: start;
-}
 
-#hzavlfxw {
-    position: relative;
-    margin: 0px 0px 8px calc((100% - 980px) * 0.5);
-    left: 545px;
-    grid-area: 4 / 1 / 5 / 2;
-    justify-self: start;
-    align-self: start;
-}
-
-#comp-iz8c7idu {
-    position: relative;
-    margin: 0px 0px 22px calc((100% - 980px) * 0.5);
-    left: 545px;
-    grid-area: 5 / 1 / 6 / 2;
-    justify-self: start;
-    align-self: start;
-}
-
-#hz86uwaf {
-    position: relative;
-    margin: 0px 0px 29px calc((100% - 980px) * 0.5);
-    left: 545px;
-    grid-area: 6 / 1 / 7 / 2;
-    justify-self: start;
-    align-self: start;
-}
-
-#hzcmwzfh {
-    position: relative;
-    margin: 0px 0px 0 calc((100% - 980px) * 0.5);
-    left: 544px;
-    grid-area: 7 / 1 / 8 / 2;
-    justify-self: start;
-    align-self: start;
-}
-
-#mainPagecenteredContent {
-    position: relative;
-}
-
-#mainPageinlineContent-gridContainer > * {
-    pointer-events: initial;
-}
-
-#mainPageinlineContent-gridContainer > [id$="-rotated-wrapper"] {
-    pointer-events: none;
-}
-
-#mainPageinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
-    pointer-events: initial;
-}</style><div id="mainPageinlineContent-gridWrapper" data-mesh-internal="true"><div id="mainPageinlineContent-gridContainer" data-mesh-internal="true"><div style="width: 461px; height: 504px;" data-exact-height="504" data-content-padding-horizontal="0" data-content-padding-vertical="0" title="" class="wp2" id="hz484f6s"><div style="width: 461px; height: 504px;" id="hz484f6slink" class="wp2link"><div style="top: 0px; left: 0px; position: relative; width: 461px; height: 504px;" data-style="" class="wp2img" id="hz484f6simg"><img id="hz484f6simgimage" style="object-position: 50% 50%; width: 461px; height: 504px; object-fit: cover;" alt="" data-type="image" src="william-shakespeare-194895-1-402.jpg"></div></div></div><style type="text/css" data-styleid="wp2">.wp2_zoomedin {cursor:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.cur), auto;overflow:hidden;display:block;}
-.wp2_zoomedout {cursor:url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_in.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_in.cur), auto;}
-.wp2link {display:block;overflow:hidden;}
-.wp2img {overflow:hidden;}
-.wp2imgimage {position:static;box-shadow:#000 0 0 0;user-select:none;}</style><div data-packed="true" style="width: 385px; pointer-events: none;" class="txtNew" id="hz47ezqv_0"><h2 class="font_2" style="line-height:1.2em;">Recent Roles</h2>
-</div><style type="text/css" data-styleid="txtNew">.txtNew {word-wrap:break-word;text-align:start;}
-.txtNew_override-left * {text-align:left !important;}
-.txtNew_override-right * {text-align:right !important;}
-.txtNew_override-center * {text-align:center !important;}
-.txtNew_override-justify * {text-align:justify !important;}
-.txtNew > * {pointer-events:auto;}
-.txtNew li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
-.txtNew ol,.txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
-.txtNew ul {list-style-type:disc;}
-.txtNew ol {list-style-type:decimal;}
-.txtNew ul ul,.txtNew ol ul {list-style-type:circle;}
-.txtNew ul ul ul,.txtNew ol ul ul {list-style-type:square;}
-.txtNew ul ol ul,.txtNew ol ol ul {list-style-type:square;}
-.txtNew ul[dir="rtl"],.txtNew ol[dir="rtl"] {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew ul[dir="rtl"] ul,.txtNew ul[dir="rtl"] ol,.txtNew ol[dir="rtl"] ul,.txtNew ol[dir="rtl"] ol {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew p {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h1 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h2 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h3 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h4 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h5 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h6 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew a {color:inherit;}</style><div data-border-width="3" style="transform-origin:center 1.5px;top:;bottom:;left:;right:;width:30px;height:5px;position:" class="style-jqkmeypg" id="hzcmu1gf"></div><style type="text/css" data-styleid="style-jqkmeypg">.style-jqkmeypg {box-sizing:border-box;border-top:3px solid rgba(227, 63, 14, 1);height:0;}</style><div data-packed="true" style="width: 257px; pointer-events: none;" class="txtNew" id="hz47ezqu"><p class="font_8" style="line-height:1.5em;"><span style="letter-spacing:0em;">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</span></p>
-</div><style type="text/css" data-styleid="txtNew">.txtNew {word-wrap:break-word;text-align:start;}
-.txtNew_override-left * {text-align:left !important;}
-.txtNew_override-right * {text-align:right !important;}
-.txtNew_override-center * {text-align:center !important;}
-.txtNew_override-justify * {text-align:justify !important;}
-.txtNew > * {pointer-events:auto;}
-.txtNew li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
-.txtNew ol,.txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
-.txtNew ul {list-style-type:disc;}
-.txtNew ol {list-style-type:decimal;}
-.txtNew ul ul,.txtNew ol ul {list-style-type:circle;}
-.txtNew ul ul ul,.txtNew ol ul ul {list-style-type:square;}
-.txtNew ul ol ul,.txtNew ol ol ul {list-style-type:square;}
-.txtNew ul[dir="rtl"],.txtNew ol[dir="rtl"] {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew ul[dir="rtl"] ul,.txtNew ul[dir="rtl"] ol,.txtNew ol[dir="rtl"] ul,.txtNew ol[dir="rtl"] ol {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew p {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h1 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h2 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h3 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h4 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h5 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h6 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew a {color:inherit;}</style><div data-packed="true" style="width: 385px; pointer-events: none;" class="txtNew" id="hzavlfxw"><h2 class="font_2" style="line-height:1.2em;">Upcoming Projects</h2>
-</div><style type="text/css" data-styleid="txtNew">.txtNew {word-wrap:break-word;text-align:start;}
-.txtNew_override-left * {text-align:left !important;}
-.txtNew_override-right * {text-align:right !important;}
-.txtNew_override-center * {text-align:center !important;}
-.txtNew_override-justify * {text-align:justify !important;}
-.txtNew > * {pointer-events:auto;}
-.txtNew li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
-.txtNew ol,.txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
-.txtNew ul {list-style-type:disc;}
-.txtNew ol {list-style-type:decimal;}
-.txtNew ul ul,.txtNew ol ul {list-style-type:circle;}
-.txtNew ul ul ul,.txtNew ol ul ul {list-style-type:square;}
-.txtNew ul ol ul,.txtNew ol ol ul {list-style-type:square;}
-.txtNew ul[dir="rtl"],.txtNew ol[dir="rtl"] {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew ul[dir="rtl"] ul,.txtNew ul[dir="rtl"] ol,.txtNew ol[dir="rtl"] ul,.txtNew ol[dir="rtl"] ol {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew p {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h1 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h2 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h3 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h4 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h5 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h6 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew a {color:inherit;}</style><div data-border-width="3" style="transform-origin:center 1.5px;top:;bottom:;left:;right:;width:30px;height:5px;position:" class="style-iz8c74qh" id="comp-iz8c7idu"></div><style type="text/css" data-styleid="style-iz8c74qh">.style-iz8c74qh {box-sizing:border-box;border-top:3px solid rgba(227, 63, 14, 1);height:0;}</style><div data-packed="true" style="width: 312px; pointer-events: none;" class="txtNew" id="hz86uwaf"><p class="font_8" style="line-height:1.5em;">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
-</div><style type="text/css" data-styleid="txtNew">.txtNew {word-wrap:break-word;text-align:start;}
-.txtNew_override-left * {text-align:left !important;}
-.txtNew_override-right * {text-align:right !important;}
-.txtNew_override-center * {text-align:center !important;}
-.txtNew_override-justify * {text-align:justify !important;}
-.txtNew > * {pointer-events:auto;}
-.txtNew li {font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:normal;}
-.txtNew ol,.txtNew ul {padding-left:1.3em;padding-right:0;margin-left:0.5em;margin-right:0;line-height:normal;letter-spacing:normal;}
-.txtNew ul {list-style-type:disc;}
-.txtNew ol {list-style-type:decimal;}
-.txtNew ul ul,.txtNew ol ul {list-style-type:circle;}
-.txtNew ul ul ul,.txtNew ol ul ul {list-style-type:square;}
-.txtNew ul ol ul,.txtNew ol ol ul {list-style-type:square;}
-.txtNew ul[dir="rtl"],.txtNew ol[dir="rtl"] {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew ul[dir="rtl"] ul,.txtNew ul[dir="rtl"] ol,.txtNew ol[dir="rtl"] ul,.txtNew ol[dir="rtl"] ol {padding-left:0;padding-right:1.3em;margin-left:0;margin-right:0.5em;}
-.txtNew p {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h1 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h2 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h3 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h4 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h5 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew h6 {margin:0;line-height:normal;letter-spacing:normal;}
-.txtNew a {color:inherit;}</style><div id="hzcmwzfh" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="129" data-height="37" style="height: 37px; min-height: 22px; width: 129px;" class="style-iz8cdzkb" data-state="desktop shouldUseFlex center"><a href="https://www.wix.com/demone2/actress-resume-r#!reel/crjc" target="_self" role="button" id="hzcmwzfhlink" class="g-transparent-a style-iz8cdzkblink"><span id="hzcmwzfhlabel" class="style-iz8cdzkblabel">Watch Reel</span></a></div><style type="text/css" data-styleid="style-iz8cdzkb">.style-iz8cdzkb button.style-iz8cdzkblink {width:100%;}
-.style-iz8cdzkb[data-state~="shouldUseFlex"] .style-iz8cdzkblink,.style-iz8cdzkb[data-state~="shouldUseFlex"] .style-iz8cdzkblabelwrapper {text-align:initial;display:flex;align-items:center;}
-.style-iz8cdzkb[data-state~="shouldUseFlex"][data-state~="center"] .style-iz8cdzkblink,.style-iz8cdzkb[data-state~="shouldUseFlex"][data-state~="center"] .style-iz8cdzkblabelwrapper {justify-content:center;}
-.style-iz8cdzkb[data-state~="shouldUseFlex"][data-state~="left"] .style-iz8cdzkblink,.style-iz8cdzkb[data-state~="shouldUseFlex"][data-state~="left"] .style-iz8cdzkblabelwrapper {justify-content:flex-start;}
-.style-iz8cdzkb[data-state~="shouldUseFlex"][data-state~="right"] .style-iz8cdzkblink,.style-iz8cdzkb[data-state~="shouldUseFlex"][data-state~="right"] .style-iz8cdzkblabelwrapper {justify-content:flex-end;}
-.style-iz8cdzkblink {border-radius:0;  position:absolute;top:0;right:0;bottom:0;left:0;transition:border-color 0.4s ease 0s, background-color 0.4s ease 0s;  }
-.style-iz8cdzkblabel {font:normal normal normal 16px/1.4em spinnaker,sans-serif;  transition:color 0.4s ease 0s;  color:#E33F0E;display:inline-block;margin:calc(-1 * 3px) 3px 0;position:relative;white-space:nowrap;}
-.style-iz8cdzkb[data-state~="shouldUseFlex"] .style-iz8cdzkblabel {margin:0;}
-.style-iz8cdzkb[data-disabled="false"] .style-iz8cdzkblink {background-color:rgba(255, 255, 255, 1);border:solid rgba(227, 63, 14, 1) 3px;cursor:pointer !important;}
-.style-iz8cdzkb[data-disabled="false"]:active[data-state~="mobile"] .style-iz8cdzkblink,.style-iz8cdzkb[data-disabled="false"]:hover[data-state~="desktop"] .style-iz8cdzkblink,.style-iz8cdzkb[data-disabled="false"][data-preview~="hover"] .style-iz8cdzkblink {background-color:rgba(227, 63, 14, 1);border-color:rgba(227, 63, 14, 1);}
-.style-iz8cdzkb[data-disabled="false"]:active[data-state~="mobile"] .style-iz8cdzkblabel,.style-iz8cdzkb[data-disabled="false"]:hover[data-state~="desktop"] .style-iz8cdzkblabel,.style-iz8cdzkb[data-disabled="false"][data-preview~="hover"] .style-iz8cdzkblabel {color:#FFFFFF;}
-.style-iz8cdzkb[data-disabled="true"] .style-iz8cdzkblink,.style-iz8cdzkb[data-preview~="disabled"] .style-iz8cdzkblink {background-color:rgba(204, 204, 204, 1);border-color:rgba(204, 204, 204, 1);}
-.style-iz8cdzkb[data-disabled="true"] .style-iz8cdzkblabel,.style-iz8cdzkb[data-preview~="disabled"] .style-iz8cdzkblabel {color:#FFFFFF;}</style></div></div></div></div><style type="text/css" data-styleid="p1">.p1bg {position:absolute;top:0;right:0;bottom:0;left:0;}
-.p1[data-state~="mobileView"] .p1bg {left:10px;right:10px;}
-.p1inlineContent {position:absolute;top:0;right:0;bottom:0;left:0;}</style></div></div></div></main>
-  <!-- Contact -->
-  <footer style="background-color:white"class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-
-</footer>
-</body>
-</html>
+</body></html>
