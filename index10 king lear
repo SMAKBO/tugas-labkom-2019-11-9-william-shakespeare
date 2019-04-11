@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>KING LEAR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">KING</span> LEAR.</h1>
+    <p>Roman tragik karya William Shakespeare.</p>
+    <img src="king lear.jpg" alt="boy" class="w3-image" width="400" height="500">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Tentang Karya</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> <font size="4"><font color="white">King Lear” merupakan salah satu drama Inggris karya William Shakespeare yang dijadikan objek penelitian ini. Bahasa yang digunakan dalam drama “King Lear” sederhana dan mudah dimengerti oleh kita. Dengan membaca drama “King Lear”, kita bisa belajar bagaimana memahami cinta, bagaimana mencintai dan dicintai, dan bagaimana menyadari nilai kesetiaan.</p>
+    
+     <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Sinopsis Karya</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> <font size="4"><font color="white">Tema drama “King Lear” adalah perselingkuhan dan konspirasi Jenis-jenis cinta yang terkandung dalam drama “King Lear”, yaitu cinta sejati, cinta palsu (cinta yang penuh dengan kebohongan), cinta seorang ayah, cinta berdasarkan perjanjian, cinta setia,  mencintai diri sendiri.<p>Ketika pembunuhan kelompok mencapai orang-orang terakhir, Caesar melihat bahwa bahkan teman lamanya Brutus telah mengkhianatinya. Dia mengucapkan kalimat terkenal "Et tu, Brute?" Kemudian menambahkan "Kalau begitu jatuh, Caesar," menunjukkan bahwa pengkhianatan Brutus tidak lagi memberinya keinginan untuk mencintai. 
+          <p>Dari ketiga puteri anak King Lear (Goneril, Regan, dan Cordelia), hanya putri Cordelia yang mempunyai cinta sejati kepada ayahnya. Cordelia memperlihatkan cintanya kepada ayahnya dengan tingkah laku dan perbuatan. Sedangkan kedua kakaknya, Goneril dan Regan memperlihatkan kata-kata cintanya dengan baik, tetapi tidak dapat dibuktikan dengan tingkah laku.<p>Ketika Brutus tidur malam itu, hantu Kaisar datang kepadanya dalam mimpi dan memperingatkan dia akan kekalahan yang akan datang, kemunculannya memberi tahu Brutus "kamu akan melihatku di Filipi." Saat konspirator bersiap untuk bertempur, Cassius dan Brutus tahu mereka berdua akan mati. Mereka tersenyum dan saling menunjukkan kebaikan terakhir sebelum kematian mereka. 
+Apa yang mereka ucapkan dengan cinta tidak sesuai dengan apa yang ada dalam hatinya. Cinta mereka penuh dengan kebohongan sebagai kedok supaya ayahnya senang. Namun pada akhirnya, Goneril dan Regan  menemui ajalnya secara tragis<p>Pengaruh terhadap orang sekitar, Kent sebagai penasehat King Lear telah mengabdi pada atasannya dengan membuktikan cintanya tanpa pamrih, namun ia diancam akan dibunuh bila masih ada di hadapan rajanya. Sebagai tanda cintanya, ia menyamar dengan mengganti identitasnya menjadi abdi raja. Ia rela mati menyusul King Lear demi cintanya kepada Tuannya. </p></p></p></p></font></font>
+    </p>
+
+<!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+     <img src="2.jpg" width="200" height="300"> <img src="king lear.jpg" width="200" height="300"> <img src="3.jpg" width="200" height="300"> <img src="1.jpg" width="200" height="200"> 
+
+
+
+ 
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Us</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bogor, INA</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +62 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: williamshakespeare@mail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send us a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
