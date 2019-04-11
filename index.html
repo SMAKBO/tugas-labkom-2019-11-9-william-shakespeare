@@ -1,11 +1,14 @@
-  <!DOCTYPE html>
-<html><head><title>William Shakespeare</title>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>William Shakespeare</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -103,6 +106,32 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 </style>
 </head><body class="w3-black">
 
@@ -116,15 +145,15 @@ img {vertical-align: middle;}
   </a>
   <a href="index2.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
+    <p>BIOGRAFI</p>
   </a>
   <a href="index3.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
+    <i class="  fas fa-book-open w3-xxlarge"></i>
+    <p>KARYA</p>
   </a>
   <a href="index4.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
+    <p>ABOUT US</p>
   </a>
 </nav>
 
@@ -166,51 +195,83 @@ img {vertical-align: middle;}
   <hr>
   <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <center><img src="220px-Romeoandjuliet1597.jpg" style="width:30%"></center>
-  <div class="text">Romeo and Juliet</div>
+<div class="mySlides fade" style="display: none;">
+  <div class="numbertext">1 / 5</div>
+  <center><a href="index6.html"><img src="220px-Romeoandjuliet1597.jpg" style="width:30%"></center>
+  <div class="text" style="color: black">Romeo and Juliet</div></a>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <center><img src="51kCmqG2BcL.jpg" style="width:30%"></center>
-  <div class="text" style="color: black">King Lear</div>
+<div class="mySlides fade" style="display: none;">
+  <div class="numbertext">2 / 5</div>
+  <center><a href="index10.html"><img src="51kCmqG2BcL.jpg" style="width:30%"></center>
+  <div class="text" style="color: black">King Lear</div></a>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <center><img src="{60A26637-0B46-4623-8BB1-D3F0DBC1FB79}Img400.jpg" style="width:30%"></center>
-  <div class="text">Othello</div>
+<div class="mySlides fade" style="display: block;">
+  <div class="numbertext">3 / 5</div>
+  <center><a href="index7.html"><img src="{60A26637-0B46-4623-8BB1-D3F0DBC1FB79}Img400.jpg" style="width:30%"></center>
+  <div class="text">Othello</div></a>
 </div>
+
+<div class="mySlides fade" style="display: block;">
+  <div class="numbertext">4 / 5</div>
+  <center><a href=""><img src="{29D6BA58-E332-431D-B785-994D78D172FF}Img400.jpg" style="width:30%"></center>
+  <div class="text">Macbeth</div></a>
+</div>
+
+<div class="mySlides fade" style="display: block;">
+  <div class="numbertext">5 / 5</div>
+  <center><a href="index9.html"><<img src="hamlet-27.jpg" style="width:30%"></center>
+  <div class="text">Hamlet</div></a>
+</div>
+
+<div class="mySlides fade" style="display: block;">
+  <div class="numbertext">4 / 5</div>
+  <center><a href=""><img src="Julius Caesar.jpg" style="width:30%"></center>
+  <div class="text">Julius Caesar</div></a>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+
 </div>
 <script>
-var slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlides() {
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+      slides[i].style.display = "none";  
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
 </script>
 
@@ -234,4 +295,5 @@ function showSlides() {
 </div>
 
 
-</body></html>
+
+</div></body></html>
